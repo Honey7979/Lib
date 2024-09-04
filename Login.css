@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      background-image: url("https://png.pngtree.com/background/20230527/original/pngtree-an-old-bookcase-in-a-library-picture-image_2760144.jpg");
+      background-size: cover;
+
+  }
+  
+  .container {
+      width: 40rem;
+      height: 17rem;
+      max-width: 400px;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      /* background-image: url("https://png.pngtree.com/background/20230527/original/pngtree-an-old-bookcase-in-a-library-picture-image_2760144.jpg"); */
+      border-radius: 10px;
+  }
+  
+  .form-container {
+      text-align: center;
+  }
+  
+  h2 {
+      margin-bottom: 20px;
+      color: #333;
+  }
+  
+  .input-group {
+      margin-bottom: 15px;
+  }
+  
+  input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+  
+  .button-group {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  button {
+      width: 40%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #8d27ae;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  button:hover {
+      background-color:  #c37eda;
+  }
+  
+  .toggle-btn {
+      background-color: #f13b8d;
+      width: 10rem;
+
+  }
+  
+  .toggle-btn:hover {
+      background-color: #df6099;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 480px) {
+      .button-group {
+          flex-direction: column;
+      }
+  
+      button {
+          width: 100%;
+          margin-bottom: 10px;
+      }
+  }
+  

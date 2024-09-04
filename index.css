@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --purple-color: #8d27ae;
+  --pink-color: #d9176d;
+  --grey-color: #f3f3f3;
+  --white-color: #fff;
+  --black-color: #010101;;
+  --light-black-color: #717171;
+  --transition: all 300ms ease-in-out;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 20px;
+}
+body{
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: 'Poppins', sans-serif;
+  color: var(--black-color);
+}
+    
+    
+    .front-page{
+        margin: 0px;
+        height: 85vh;
+        /* background-color: #007bff; */
+        background: url("library-img (1).png");
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .front-pg-captn{
+        /* background-color: rgba(39, 37, 37, 0.5); */
+        width: 100%;
+        height: 100%;
+    }
+    .typing {
+        font-family: monospace;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        width: 0;
+        animation: typing 4s steps(20) 1s forwards, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 18ch; }
+    }
+
+    @keyframes blink {
+        from, to { border-color: transparent; }
+        50% { border-color: black; }
+    }
+    .home-pg-captn{
+        color: rgb(218, 218, 236);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: relative;
+        top: 30%;
+        margin-left: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 50px;
+
+    }
+    input{
+        width: 300px;
+        border-radius: 5px;
+        border-width: 0px;
+        padding: 8px
+    }
+    button{
+        margin-left: 10px;
+    }
+    .box{
+        border-radius: 10px;
+        border: solid 5px whitesmoke;
+        padding-top: 15px;
+        font-family: 'Times New Roman', Times, serif;
+    
+    }
+    .footer {
+        background-color: #343a40;
+        color: #fff;
+        padding: 20px 0;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .footer .copyright {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+
+
+/* grid css */
+    
+#book-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+    gap: 20px;
+    justify-content: center; /* Center the grid content */
+    max-width: 1200px; /* Adjust this value based on your preferred width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+}
+
+/* Styling each book item */
+.book {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    width: 200px; /* Set a fixed width to maintain size */
+    height: auto; /* Auto height to fit content */
+}
+
+.book:hover {
+    transform: translateY(-5px);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.book h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.book p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+
+
+/* General container styles */
+.book-details-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Title */
+.book-details-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Cover images */
+.book-cover-images img {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Paragraph styling */
+.book-details-container p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Links */
+.book-details-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.book-details-container a:hover {
+    text-decoration: underline;
+}
+
+/* Close button */
+#close-details {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#close-details:hover {
+    background-color: #0056b3;
+}
+.contact-section .form-group {
+    margin-bottom: 30px;
+  }
+  .contact-section {
+    padding: 50px 0;
+    background-color: #fff5ee;
+}
+
+.contact-section h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.contact-section p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contact-section .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-section .btn {
+    background-color: #d9176d;
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section .btn:hover {
+    background-color: #b7154f;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.map iframe {
+    margin-top: 20px;
+    border: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+/* \ */
+#a{
+    text-decoration: none; 
+    border: none; 
+    /* font-size: 16px; */
+    padding: 12px ; 
+    font-size: 20px; 
+    background-color: #d68cf8; 
+    color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
+    cursor: pointer; 
+    outline: none; 
+    transition: 0.2s all;
+    margin-right:30px;  /* Adjust the value as needed */
+    /* animation: buttonMovement 0.3s ease-in-out; */
+
+
+    &:hover {
+        background-color: #f88c8c;
+        border-color: #e6bbf331;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+        /* transform: scale(1.05); */
+        transition: all 0.3s ease-in-out; /
+    }
+
+}
+#c{
+    text-decoration: none; 
+    border: none; 
+    /* font-size: 16px; */
+    padding: 12px ; 
+    font-size: 20px; 
+    background-color: #d68cf8; 
+    color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
+    cursor: pointer; 
+    outline: none; 
+    transition: 0.2s all;
+    margin-right:30px;  /* Adjust the value as needed */
+    /* animation: buttonMovement 0.3s ease-in-out; */
+
+
+    &:hover {
+        background-color: #f88c8c;
+        border-color: #e6bbf331;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+        /* transform: scale(1.05); */
+        transition: all 0.3s ease-in-out; /
+    }
+
+}
+#h{
+    text-decoration: none; 
+    border: none; 
+    /* font-size: 16px; */
+    padding: 12px ; 
+    font-size: 20px; 
+    background-color: #d68cf8; 
+    color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
+    cursor: pointer; 
+    outline: none; 
+    transition: 0.2s all;
+    margin-right:30px;
+    /* margin-top: 30px;  Adjust the value as needed */
+    /* animation: buttonMovement 0.3s ease-in-out; */
+
+
+    &:hover {
+        background-color: #f88c8c;
+        border-color: #e6bbf331;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+        /* transform: scale(1.05); */
+        transition: all 0.3s ease-in-out; /
+    }
+
+}
